@@ -13,16 +13,16 @@ category:            Web
 build-type:          Simple
 cabal-version:       >=1.10
 
-extra-source-files:
-  lib/semantic.min.css
-  lib/themes
+--extra-source-files:
+--  lib/semantic.min.css
+--  lib/themes
 
 library
   hs-source-dirs: src
-  js-sources:
+  --js-sources:
     -- Order is important: jquery is used by semantic but must come after.
-    lib/semantic.min.js,
-    lib/jquery.min.js
+    --lib/semantic.min.js,
+    --lib/jquery.min.js
 
   exposed-modules:
     Reflex.Dom.SemanticUI
